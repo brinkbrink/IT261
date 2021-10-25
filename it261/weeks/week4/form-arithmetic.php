@@ -108,6 +108,6 @@ if(empty($fname && $int_brushes && $int_quills && $int_pencils)) {
 
 
 
-?>
+;?>
 </body>
 </html>
