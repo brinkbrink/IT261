@@ -1,0 +1,103 @@
+/* styles for my IT 261 portal website */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(114, 114, 114);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    overflow: hidden;
+    background: rgb(82, 218, 138);
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+#logo {
+    float: left;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+nav {
+    height: 50px;
+    float: right;
+    font-size: 22px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+    padding: 13% 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.current {
+    color: rgb(11, 94, 0);
+    font-weight: bold;
+}
+
+#wrapper {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+#hero {
+    height: 300px;
+    margin-bottom: 20px;
+    background: red;
+}
+
+/*values based on 940px grid--580/940 */
+main {
+    color:rgb(171, 194, 171);
+    width: 61.7%;
+    height: 400px;
+    background: rgb(0, 107, 5);
+    float: left;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+aside {
+    color:rgb(152, 173, 152);
+    width: 36.17%;
+    height: 300px;
+    float: right;
+    background: rgb(0, 75, 0);
+    padding: 10px;
+}
+
+main ul {
+    padding: 20px;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px dashed #fff;
+    clear: both;
+}
+
+footer li {
+    float: left;
+    list-style-type: none;
+    margin-left: 20px;
+}
