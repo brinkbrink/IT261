@@ -1,6 +1,24 @@
 <?php
 // form 3 - adding the HTML and CSS!
+if(isset($_POST['fname'],
+        $_POST['lname'],
+        $_POST['email'],
+        $_POST['comments'])) {
 
+$fname = $_POST['fname'];
+$lname = $_POST['lname'];
+$email = $_POST['email'];
+$comments = $_POST['comments'];
+
+// we are going to nest an if/else statement
+
+if(empty($fname && $lname && $email && $comments)) {
+    $error = 'Please fill out the forms';
+} else {
+    $no_error = 'All is well';
+}
+
+} // end isset
 
 
 
