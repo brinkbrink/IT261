@@ -65,8 +65,8 @@
                 </li>
                 <li>Week 4:
                     <ul>
-                    <li>TBA</li>
-                    <li>TBA</li>
+                    <li><a href="weeks/week4/form1.php">form1.php</a></li>
+                    <li><a href="weeks/week4/form2.php">form2.php</a></li>
                     <li>TBA</li>
                     </ul>
                 </li>
