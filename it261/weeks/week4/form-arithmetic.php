@@ -85,7 +85,7 @@ if(empty($fname && $brushes && $quills && $pencils)) {
     <li>'.$quills.' quills</li>
     <li>'.$pencils.' pencils</li>
     </ul>
-    <p>Totalling '.$total.' beverages</p>
+    <p>Totalling '.$total.' art tools</p>
     </div>
     ';
 
