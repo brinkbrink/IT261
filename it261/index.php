@@ -45,7 +45,7 @@
         <aside>
             <h2>Weekly Class Exercises:</h2>
             <ul>
-                <li>Week 2:
+                <li><h3>Week 2:</h3>
                     <ul>
                     <li><a href="weeks/week2/var.php">var.php</a></li>
                     <li><a href="weeks/week2/var2.php">var2.php</a></li>
@@ -54,7 +54,7 @@
                     <li><a href="weeks/week2/heredoc.php">heredoc.php</a></li>
                     </ul>
                 </li>
-                <li>Week 3:
+                <li><h3>Week 3:</h3>
                     <ul>
                     <li><a href="weeks/week3/date.php">date.php</a></li>
                     <li><a href="weeks/week3/foreach.php">foreach.php</a></li>
@@ -63,11 +63,21 @@
                     <li><a href="weeks/week3/switch.php">switch.php</a></li>
                     </ul>
                 </li>
-                <li>Week 4:
+                <li><h3>Week 4:</h3>
                     <ul>
-                    <li>TBA</li>
-                    <li>TBA</li>
-                    <li>TBA</li>
+                    <li><a href="weeks/week4/adder.php">adder.php</a></li>
+                    <li><a href="weeks/week4/form1.php">form1.php</a></li>
+                    <li><a href="weeks/week4/form2.php">form2.php</a></li>
+                    <li><a href="weeks/week4/form3.php">form3.php</a></li>
+                    <li><a href="weeks/week4/form-arithmetic.php">form-arithmetic.php</a></li>
+                    <li><a href="weeks/week4/celcius.php">celcius.php</a></li>
+                    </ul>
+                </li>
+                <li><h3>Week 5:</h3>
+                    <ul>
+                        <li>TBD</li>
+                        <li>TBD</li>
+                        <li>TBD</li>
                     </ul>
                 </li>
             </ul>
