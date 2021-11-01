@@ -21,8 +21,16 @@ method="post">
 <label for="amount">How much money do you have?</label>
 <input type="number" name="amount">
 <label for="currency">Choose your currency</label>
-<input type="radio" name="currency" value="">
+<ul>
+<li><input type="radio" name="currency" value="0.013">Rubles</li>
+<li><input type="radio" name="currency" value="0.76">Canadian</li>
+<li><input type="radio" name="currency" value="1.28">Pounds</li>
+<li><input type="radio" name="currency" value="1.18">Euros</li>
+<li><input type="radio" name="currency" value="0.0094">Yens</li>
+</ul>
 
+<input type="submit" value="Convert it!">
+<p><a href="">Reset!</a></p>
 </fieldset>
 
 </form>
