@@ -18,6 +18,11 @@ method="post">
 <input type="text" name="name">
 <label for="email">EMAIL</label>
 <input type="email" name="email">
+<label for="amount">How much money do you have?</label>
+<input type="number" name="amount">
+<label for="currency">Choose your currency</label>
+<input type="radio" name="currency" value="">
+
 </fieldset>
 
 </form>
