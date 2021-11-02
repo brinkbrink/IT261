@@ -22,3 +22,37 @@ fieldset {
     padding: 8px;
     border: 1px solid red;
 }
+
+.box {
+    width: 400px;
+    margin: 10px auto;
+    border: 1 px solid green;
+    padding: 8px;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+input[type=radio]{
+    margin: 5px;
+}
+
+form ul {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.error {
+    display: block;
+    color: red;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 3px;
+}
+
+select {
+    display: block;
+    margin-bottom: 10px;
+}
