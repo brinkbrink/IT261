@@ -4,11 +4,24 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
 body {
-    background: beige;
+    font-size: .9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 form {
+    background: beige;
     width: 400px;
     margin: 30px auto;
 }
@@ -20,14 +33,15 @@ label {
 
 fieldset {
     padding: 8px;
-    border: 1px solid red;
+    border: 1px solid rgb(53, 52, 52);
 }
 
 .box {
     width: 400px;
     margin: 10px auto;
-    border: 1 px solid green;
+    border: 1px solid rgb(53, 52, 52);
     padding: 8px;
+    font-size: .85em;
 }
 
 input {
@@ -49,8 +63,9 @@ form ul {
     display: block;
     color: red;
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1em;
     margin-bottom: 3px;
+    border: 1px solid rgb(53, 52, 52);
 }
 
 select {
