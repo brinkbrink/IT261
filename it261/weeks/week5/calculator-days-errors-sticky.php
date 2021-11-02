@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Our Currency 3 - Our Sticky Form!</title>
+<title>Calculating Form - HW5</title>
 <link href="css/calculator.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
-
+<h1>Our Trip Calculator</h1>
 <form action="
 <?php echo htmlspecialchars($_SERVER['PHP_SELF'])  
 ;?>"
@@ -32,11 +32,11 @@ method="post">
 <label for="price">Price per gallon</label>
 <ul>
 <li><input type="radio" name="price" value="3.00"
-<?php if(isset($_POST['currency']) && $_POST['currency'] == '0.013') echo 'checked="checked"'
+<?php if(isset($_POST['price']) && $_POST['price'] == '3.00') echo 'checked="checked"'
 ;?>>3.00</li>
-<li><input type="radio" name="currency" value="3.50"<?php if(isset($_POST['currency']) && $_POST['currency'] == '0.76') echo 'checked="checked"'
+<li><input type="radio" name="price" value="3.50"<?php if(isset($_POST['price']) && $_POST['price'] == '3.50') echo 'checked="checked"'
 ;?>>3.50</li>
-<li><input type="radio" name="currency" value="4.00"<?php if(isset($_POST['currency']) && $_POST['currency'] == '1.28') echo 'checked="checked"'
+<li><input type="radio" name="price" value="4.00"<?php if(isset($_POST['price']) && $_POST['price'] == '4.00') echo 'checked="checked"'
 ;?>>4.00</li>
 </ul>
 
@@ -49,19 +49,19 @@ method="post">
 >Select Fuel Efficiency</option>
 
 <option value="20"
-<?php if(isset($_POST['fuel']) && $_POST['fuel'] == 'terrible') echo 'selected= "selected" '
+<?php if(isset($_POST['fuel']) && $_POST['fuel'] == '20') echo 'selected= "selected" '
 ;?>>Terrible</option>
 
 <option value="30"
-<?php if(isset($_POST['fuel']) && $_POST['fuel'] == 'better') echo 'selected= "selected" '
+<?php if(isset($_POST['fuel']) && $_POST['fuel'] == '30') echo 'selected= "selected" '
 ;?>>Getting Better</option>
 
 <option value="40"
-<?php if(isset($_POST['fuel']) && $_POST['fuel'] == 'chase') echo 'selected= "selected" '
+<?php if(isset($_POST['fuel']) && $_POST['fuel'] == '40') echo 'selected= "selected" '
 ;?>>Good</option>
 
 <option value="50"
-<?php if(isset($_POST['fuel']) && $_POST['fuel'] == 'chase') echo 'selected= "selected" '
+<?php if(isset($_POST['fuel']) && $_POST['fuel'] == '50') echo 'selected= "selected" '
 ;?>>Great</option>
 </select>
 
@@ -106,18 +106,22 @@ if(isset(
     $name = $_POST['name'];
     $miles = $_POST['miles'];
     $hours = $_POST['hours'];
-    $price = $_POST['price]'];
+    $price = $_POST['price'];
     $fuel = $_POST['fuel'];
-    $total = $amount * $currency;
-    $friendly_total = floor($total);
+    $gastotal = ($miles / $fuel) * $price;
+    $friendly_gastotal = number_format($gastotal,2);
+    $hourtotal = $miles / 60;
+    $friendly_hourtotal = floor($hourtotal);
+    $daytotal = $hourtotal / $hours;
+    $friendly_daytotal = floor($daytotal);
 
     echo '
         <div class="box">
         <h2>Calculator Results</h2>
         <p>'.$name.', you will be driving <b>'.$miles.' miles</b></p>
         <p>Your vehicle has an efficiency rating of <b>'.$fuel.' miles per gallon.</b></p>
-        <p>Your total cost for gas will be <b>$'.$gastotal.' dollars</b></p>
-        <p>You will be driving a total of <b>'.$hourtotal.' equating to '.$daytotal.' days.</b></p>
+        <p>Your total cost for gas will be <b>$'.$friendly_gastotal.' dollars</b></p>
+        <p>You will be driving a total of <b>'.$friendly_hourtotal.' hours equating to '.$friendly_daytotal.' days.</b></p>
         </div>
     ';
 } // close isset

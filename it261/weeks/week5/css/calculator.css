@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+body {
+    font-size: .9em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 form {
     background: beige;
     width: 400px;
@@ -23,8 +39,9 @@ fieldset {
 .box {
     width: 400px;
     margin: 10px auto;
-    border: 1 px solid green;
+    border: 1px solid rgb(53, 52, 52);
     padding: 8px;
+    font-size: .85em;
 }
 
 input {
