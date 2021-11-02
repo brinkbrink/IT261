@@ -33,7 +33,7 @@
         <p>Previously I spent over 15 years working various positions within the restaurant industry, mostly in the front of the house as a bartender. My love of people, food, and flavors kept me in restaurants but the pandemic combined with a preexisting urge to return to school brought me to this program.</p>
 
         <p>Beyond school and work and the aforementioned interests I also love music, foraging, growing food, studying foodways and diasporas, history, social sciences, mycology, promoting community science, and my beloved cats.</p>
-        <h2><a href="weeks/week5/calculator-days-errors-sticky.php">Homework 5: Calculator</h2>
+        <h2><a href="weeks/week5/calculator-days-errors-sticky.php">Homework 5: Calculator</a></h2>
         <h2>Homework 1: MAMP</h2>
         <h3>MAMP Localhost</h3>
         <img id="screenshot" alt="Screenshot of MAMP Localhost" src="images/mamp.png">
