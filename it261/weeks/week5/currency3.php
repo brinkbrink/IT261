@@ -25,7 +25,10 @@ method="post">
 ">
 
 <label for="amount">How much money do you have?</label>
-<input type="number" name="amount">
+<input type="text" name="amount" value="
+<?php if(isset($_POST['amount'])) echo htmlspecialchars($_POST['amount']); ;?>
+">
+
 <label for="currency">Choose your currency</label>
 <ul>
 <li><input type="radio" name="currency" value="0.013"
@@ -44,12 +47,25 @@ method="post">
 <label for="bank">Choose your banking institution</label>
 
 <select name="bank">
-<option value="" NULL>Select one!</option>
-<option value="BOA">Bank of America</option>
-<option value="key">Key Bank</option>
-<option value="chase">Chase</option>
-<option value="BECU">Boeing Credit  Union</option>
-<option value="mattress">Mattress</option>
+<option value="" NULL
+<?php if(isset($_POST['blank']) && $_POST['bank'] == NULL) echo 'selected= "unselected" '
+;?>
+>Select one!</option>
+<option value="BOA"
+<?php if(isset($_POST['bank']) && $_POST['bank'] == 'BOA') echo 'selected= "selected" '
+;?>>Bank of America</option>
+<option value="key"
+<?php if(isset($_POST['bank']) && $_POST['bank'] == 'key') echo 'selected= "selected" '
+;?>>Key Bank</option>
+<option value="chase"
+<?php if(isset($_POST['bank']) && $_POST['bank'] == 'chase') echo 'selected= "selected" '
+;?>>Chase</option>
+<option value="BECU"
+<?php if(isset($_POST['bank']) && $_POST['bank'] == 'BECU') echo 'selected= "selected" '
+;?>>Boeing Credit  Union</option>
+<option value="mattress"
+<?php if(isset($_POST['bank']) && $_POST['bank'] == 'mattress') echo 'selected= "selected" '
+;?>>Mattress</option>
 </select>
 
 <input type="submit" value="Convert it!">
