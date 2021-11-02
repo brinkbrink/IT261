@@ -15,6 +15,7 @@ if(empty($_POST['name'] &&
             echo 'Please fill out the fields!';
         } else {
             echo $name;
+            echo '<br>';
             echo $email;
         }
         } else {
@@ -30,3 +31,4 @@ if(empty($_POST['name'] &&
 
             </form>';
         }
+?>
