@@ -1,5 +1,5 @@
 <?php
-// cannot echo above the doctype!!
+// cannot echo above the doctype!!!
 
 $first_name = '';
 $last_name = '';
