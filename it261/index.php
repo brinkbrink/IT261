@@ -81,6 +81,14 @@
                         <li><a href="weeks/week5/null.php">null.php</a></li>
                     </ul>
                 </li>
+                <li><h3>Week 6:</h3>
+                    <ul>
+                        <li><a href="weeks/week6/form1.php">form1.php</a></li>
+                        <li><a href="weeks/week6/functions.php">functions.php</a></li>
+                        <li><a href="weeks/week6/implode.php">implode.php</a></li>
+                        <li><a href="website/index.php">index.php</a></li>
+                    </ul>
+                </li>
             </ul>
                 <h2>Final Assignment</h2>
         </aside>
