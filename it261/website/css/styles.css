@@ -109,10 +109,16 @@ fieldset {
 aside {
     color:rgb(152, 173, 152);
     width: 36.17%;
-    height: 300px;
     float: right;
     background: rgb(0, 75, 0);
     padding: 10px;
+}
+
+img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main ul {
