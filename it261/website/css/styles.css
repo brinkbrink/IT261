@@ -60,29 +60,65 @@ nav a {
 }
 
 #hero {
-    height: 300px;
+    /* height: 300px; */
     margin-bottom: 20px;
-    background: red;
+    background: rgb(0, 75, 0);
 }
 
 /*values based on 940px grid--580/940 */
 main {
     color:rgb(171, 194, 171);
     width: 61.7%;
-    height: 400px;
+    height: 500px;
+    overflow: scroll;
     background: rgb(0, 107, 5);
     float: left;
     margin-bottom: 20px;
     padding: 15px;
 }
+/* form styles */ 
+
+form {
+    background: rgba(3, 0, 156, 0.418);
+    width: 400px;
+    margin: 20px auto;
+
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+.error {
+    display: block;
+    color: rgb(128, 5, 5);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-style: italic;
+}
 
 aside {
     color:rgb(152, 173, 152);
     width: 36.17%;
-    height: 300px;
     float: right;
     background: rgb(0, 75, 0);
     padding: 10px;
+}
+
+img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main ul {

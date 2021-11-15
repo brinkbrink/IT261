@@ -89,6 +89,13 @@
                         <li><a href="website/index.php">index.php</a></li>
                     </ul>
                 </li>
+                <li><h3>Week 7:</h3>
+                    <ul>
+                        <li><a href="weeks/week7/pictures.php">pictures.php</a></li>
+                        <li><a href="weeks/week7/random.php">random.php</a></li>
+                        <li><a href="weeks/week7/strings.php">strings.php</a></li>
+                    </ul>
+                </li>
             </ul>
                 <h2>Final Assignment</h2>
         </aside>

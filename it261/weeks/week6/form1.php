@@ -114,14 +114,14 @@ $_POST['phone']
 $to = 'brinkbrink@gmail.com' ;
 $subject = 'Test Email,' .date('m/d/y') ;
 $body = '
-The first name is: '.first_name.' '.PHP_EOL.'
-The last name is: '.last_name.' '.PHP_EOL.'
-Gender: '.gender.' '.PHP_EOL.'
-Email: '.email.' '.PHP_EOL.'
-Phone: '.phone.' '.PHP_EOL.'
-Region: '.regions.' '.PHP_EOL.'
-Wines: '.$my_wines().' '.PHP_EOL.'
-Comments: '.comments.' '.PHP_EOL.'
+The first name is: '.$first_name.' '.PHP_EOL.'
+The last name is: '.$last_name.' '.PHP_EOL.'
+Gender: '.$gender.' '.PHP_EOL.'
+Email: '.$email.' '.PHP_EOL.'
+Phone: '.$phone.' '.PHP_EOL.'
+Region: '.$regions.' '.PHP_EOL.'
+Wines: '.my_wines().' '.PHP_EOL.'
+Comments: '.$comments.' '.PHP_EOL.'
 ';
 
 $headers = array(
@@ -300,8 +300,7 @@ header('Location: thx.php');
 <span class="error">
 <?php echo $privacy_Err; ?>
 </span>
-
-<input type="submit" value="Send it">
+<input type="submit" value="Send it"/>
 <p><a href="">Reset </a></p>
 
 </fieldset>

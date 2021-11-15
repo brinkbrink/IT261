@@ -64,7 +64,7 @@ if(isset($_GET['today'])) {
 <?php echo $body ;?>">
     <header>
         <div class="header-inner">
-        <a href="index.html">
+        <a href="index.php">
             <img id="logo" src="images/logo-small.png" alt="logo">
         </a>
         <nav>
