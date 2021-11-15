@@ -60,7 +60,7 @@ nav a {
 }
 
 #hero {
-    height: 300px;
+    /* height: 300px; */
     margin-bottom: 20px;
     background: red;
 }
@@ -69,11 +69,41 @@ nav a {
 main {
     color:rgb(171, 194, 171);
     width: 61.7%;
-    height: 400px;
+    height: 500px;
+    overflow: scroll;
     background: rgb(0, 107, 5);
     float: left;
     margin-bottom: 20px;
     padding: 15px;
+}
+/* form styles */ 
+
+form {
+    background: rgba(3, 0, 156, 0.418);
+    width: 400px;
+    margin: 20px auto;
+
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+.error {
+    display: block;
+    color: rgb(128, 5, 5);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-style: italic;
 }
 
 aside {

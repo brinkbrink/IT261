@@ -4,7 +4,19 @@ include('includes/header.php');?>
 
     <div id="wrapper">
     <div id="hero">
-
+<?php
+echo rand_pic($photos);
+?>
+<h2>
+    <pre>
+    <br>
+    function rand_pic($photos) {
+    $i = rand(0, 4);
+    $selected_image = ''.$photos[$i].'.jpg';
+    return '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+}
+    </pre>
+</h2>
     </div> <!--end hero-->
     <main>
     <h1><?php echo $headline; ?></h1>
