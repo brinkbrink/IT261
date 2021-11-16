@@ -8,7 +8,7 @@
 
 header {
     overflow: hidden;
-    background: yellow;
+    background: #0f4c5c;
     border-top: 10px dashed #ddd;
 }
 
@@ -40,8 +40,13 @@ nav li {
     padding: 5% 10px;
 }
 
+a {
+    color: #869ae9;
+}
+
 nav a {
     text-decoration: none;
+    color: #f9f4f5;
 }
 
 h1 {
@@ -52,14 +57,17 @@ h1 {
 h2 {
     font-size: 18px;
     padding: 0px 4px 4px 4px;
+    color: #f9f4f5;
 }
 
 h3 {
     font-size: 16px;
     padding: 0px 4px 4px 4px;
+    color: #f9f4f5;
 }
 body {
-    background: #ddd;
+
+    background: #FB8B24;
 }
 
 p {
@@ -67,17 +75,16 @@ p {
 }
 
 #wrapper {
-    background: blue;
+    background: #0E083E;
 }
 
 main {
-    color: rgb(207, 207, 207);
-    width: 61.7%;
-    background: rgb(35, 0, 189);
+    color: #5f0f40;
+    width: 72%;
     float: left;
     padding: 10px 10px;
-    margin: 0px 5px;
-    height: 650px;
+    margin: 5px 5px;
+    height: 750px;
     overflow: scroll;
 }
 
@@ -92,12 +99,11 @@ main {
 }
 
 aside {
-    width: 35%;
+    width: 25%;
     color:rgb(37, 37, 37);
-    background: rgba(190, 0, 117, 0.267);
+    background: #0f4c5c;
     float: right;
     padding: 10px 5px 12px 30px;
-    margin: 0px 5px;
 }
 
 footer {
