@@ -92,7 +92,6 @@ $photos[1] = 'photo2';
 $photos[2] = 'photo3';
 $photos[3] = 'photo4';
 $photos[4] = 'photo5';
-echo '<br>';
 
 // $i = rand(0, 4);
 // $selected_image = ''.$photos[$i].'.jpg';
@@ -102,3 +101,17 @@ function rand_pic($photos) {
     $selected_image = ''.$photos[$i].'.png';
     return '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
 }
+
+// gallery exercise -- week 7
+$womxn['Ada_Lovelace'] = 'adalo_First computer programmer.';
+$womxn['Grace_Hopper'] = 'grace_Invented the compiler.';
+$womxn['Katherine_Johnson'] = 'kathe_Executed critical space calculations.';
+$womxn['Margaret_Hamilton'] = 'marga_Coined the term "software engineering."';
+$womxn['Adele_Goldberg'] = 'adele_Developed blueprint for Graphical User Interfaces (GUI).';
+$womxn['Safiya_Noble'] = 'safiy_Author of "Algorithms of Oppression."';
+$womxn['danah_boyd'] = 'danah_Founder and president of Data & Society.';
+$womxn['Meredith_Broussard'] = 'mered_Author of "Artificial Unintelligence: How Computers Misunderstand the World."';
+
+// $name                       $image
+// $key                        $value
+
