@@ -96,6 +96,14 @@
                         <li><a href="weeks/week7/strings.php">strings.php</a></li>
                     </ul>
                 </li>
+                <li><h3>Week 8:</h3>
+                    <ul>
+                        <li><a href="weeks/week8/config.php">config.php</a></li>
+                        <li><a href="weeks/week8/credentials.php">credentials.php</a></li>
+                        <li><a href="weeks/week8/people.php">people.php</a></li>
+                        <li><a href="weeks/week8/people-view.php">people-view.php</a></li>
+                    </ul>
+                </li>
             </ul>
                 <h2>Final Assignment</h2>
         </aside>
