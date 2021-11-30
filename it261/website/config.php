@@ -1,5 +1,13 @@
 <?php
 
+ob_start();  // prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
+
+
+
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 $nav['index.php'] = 'Home';
@@ -66,6 +74,9 @@ switch(THIS_PAGE) {
         $body = 'thx inner';
         $headline = 'Thank you for your request!';
         break;
+
+    default: 
+        $title = 'Project page of our IT 261 Website';
 }
 
 // beginning of switch for hw 3
@@ -115,3 +126,17 @@ $womxn['Meredith_Broussard'] = 'mered_Author of "Artificial Unintelligence: How 
 // $name                       $image
 // $key                        $value
 
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+    
+    
+}
