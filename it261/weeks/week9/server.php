@@ -112,7 +112,7 @@ if(isset($_POST['login_user'])){
 
     $results = mysqli_query($iConn, $query);
 
-  
+
     // if our username and password is equal to one, life is good
 
     if(mysqli_num_rows($results) == 1) {
