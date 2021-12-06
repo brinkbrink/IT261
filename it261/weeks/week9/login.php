@@ -29,6 +29,6 @@ include('errors.php');
 <h3>Not a member?</h3>
 <span class="block"><a href="register.php">Register here!</a></span>
 
-<div> <!-- end wrapper -->
+</div> <!-- end wrapper -->
 </body>
 </html>

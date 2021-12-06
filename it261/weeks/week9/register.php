@@ -3,7 +3,6 @@ include('server.php');
 include('includes/header-form.php');
 
 ?>
-</header>
 <div id="wrapper">
 <h1>Register Today!</h1>
 
