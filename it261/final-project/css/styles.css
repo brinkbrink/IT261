@@ -1,0 +1,168 @@
+/* styles for my IT 261 portal website */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(114, 114, 114);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    overflow: hidden;
+    background: rgb(82, 218, 138);
+    height: 200px;
+}
+
+.header-inner {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+#logo {
+    float: left;
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+nav {
+    height: 50px;
+    float: right;
+    font-size: 22px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    float: left;
+    list-style-type: none;
+    margin-left: 30px;
+    padding: 13% 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.current {
+    color: rgb(11, 94, 0);
+    font-weight: bold;
+}
+
+#wrapper {
+    max-width: 1100px;
+    margin: 20px auto;
+}
+
+#hero {
+    /* height: 300px; */
+    margin-bottom: 20px;
+    background: rgb(0, 75, 0);
+}
+
+/*values based on 940px grid--580/940 */
+main {
+    color:rgb(171, 194, 171);
+    width: 61.7%;
+    height: 764px;
+    overflow: scroll;
+    background: rgb(0, 107, 5);
+    float: left;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+h1 { 
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+/* form styles */ 
+
+form {
+    background: rgba(3, 0, 156, 0.418);
+    width: 400px;
+    margin: 20px auto;
+
+}
+
+label {
+    display: block;
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+.error {
+    display: block;
+    color: rgb(251, 255, 0);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+aside {
+    color:rgb(152, 173, 152);
+    width: 36.17%;
+    float: right;
+    background: rgb(0, 75, 0);
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+    width: 90%;
+}
+
+td {
+    border: solid #fff 1px;
+    padding: 10px;
+}
+
+img {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td img {
+    height: 250px;
+    width: auto;
+}
+
+main ul {
+    padding: 20px;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px dashed #fff;
+    clear: both;
+}
+
+footer li {
+    float: left;
+    list-style-type: none;
+    margin-left: 20px;
+}

@@ -1,0 +1,132 @@
+/* styles for my week 9 class ex. */
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #4a6670;
+    background: #c6d8af;
+}
+
+header {
+    background: #653239;
+    height: 90px;
+}
+
+a:link {
+    color: #c6d8af;
+  }
+  
+  a:visited {
+    color: #82735c;
+  }
+  
+  a:hover {
+    color: #ff6666;
+  }
+  
+  a:active {
+    color: #6ca6c1;
+  }
+
+.success {
+    color: #fff;
+    float: left;
+    height: 90px;
+    padding: 17px;
+    border: 3px dashed #fff;
+}
+
+.welcome-logout {
+    color: #fff;
+    float: right;
+    height: 90px;
+    padding: 10px;
+    border: 3px dashed #fff;
+}
+
+#wrapper {
+    clear: both;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* form styles */
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+form {
+    color: #fff;
+    background: #4b3b40;
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+}
+
+.block {
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+.error {
+    margin: 10px 0;
+    color: red;
+    font-style: italic;
+}
+
+main ul {
+    padding: 20px;
+}
+
+footer {
+    height: 50px;
+    line-height: 50px;
+    border-top: 1px dashed #fff;
+    clear: both;
+}
+
+footer li {
+    float: left;
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+footer a {
+    color: #4a6670;
+}
