@@ -39,6 +39,7 @@ else {
 include('includes/header.php');
 
 ?>
+<div id="wrapper">
 <main>
 <h2>Welcome to <?php echo $common;?>'s page!</h2>
 

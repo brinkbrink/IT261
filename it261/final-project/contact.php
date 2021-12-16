@@ -158,7 +158,6 @@ include('includes/header.php');
 // notification message
 
 ?>
-</header>
 
     <div id="wrapper">
     <main>
