@@ -16,29 +16,7 @@ if(isset($_GET['logout'])) {
 }
 
 include('includes/header.php');
-// notification message
-
-if(isset($_SESSION['success'])) :?>
-
-<div class="success">
-<h3> 
-<?php echo $_SESSION['success'];
-unset($_SESSION['success']);
 ?>
-</h3>
-</div>  <!-- end div success -->
-<?php endif ; 
-
-if(isset($_SESSION['username'])) :?>
-
-<div class="welcome-logout">
-<h3> Hello 
-    <?php echo $_SESSION['username']; ?>
-</h3>
-<p><a href="index.php?logout='1'">Log out</a></p>
-</div> <!-- end welcome-logout div -->
-<?php endif ; ?>
-</header>
 <?php
 // class coffee exercise
 // if today is Thursday it's a pumpkin latte day
@@ -69,49 +47,49 @@ date_default_timezone_set('America/Los_Angeles');
 
 switch($today) {
 case 'Monday':
-    $mushroom = '<h2>Today we celebrate the Tukwila International Blvd Station!</h2>';
+    $station = 'Tukwila International Blvd Station';
     $pic = 'tukwila.jpeg';
     $alt = 'tukwila station';
     $content = 'The <b>Tukwila International Blvd Station</b> is helpful for daily commuters and flying fiends alike!';
     break;
 
 case 'Tuesday':
-    $mushroom = '<h2>Today we celebrate the Columbia City Station!</h2>';
+    $station = 'Columbia City Station';
     $pic = 'columbia.jpeg';
     $alt = 'columbia city station';
     $content = 'The <b>Columbia City Station</b> is the station I see the most!';
     break;
 
 case 'Wednesday':
-    $mushroom = '<h2>Today we celebrate the SoDo Station!</h2>';
+    $station = 'SoDo Station';
     $pic = 'sodo.jpeg';
     $alt = 'sodo station';
     $content = 'The <b>SoDo</b> station is the one to take if you want to catch the Mariners!';
     break;
 
 case 'Thursday':
-    $mushroom = '<h2>Today we celebrate the International District Station!</h2>';
+    $station = 'International District Station';
     $pic = 'id.jpeg';
     $alt = 'international district station';
     $content = 'The <b>International District Station</b> is where to stop if you want the best noodles.';
     break;
 
 case 'Friday':
-    $mushroom = '<h2>Today we celebrate the Pioneer Square Station!</h2>';
+    $station = 'Pioneer Square Station';
     $pic = 'pioneer.jpeg';
     $alt = 'pioneer square station';
     $content = 'The <b>Pioneer Square Station</b> is especially helpful on First Thursdays if you like to look at art!';
     break;
 
 case 'Saturday':
-    $mushroom = '<h2>Today we celebrate the Capitol Hill Station!</h2>';
+    $station = 'Capitol Hill Station';
     $pic = 'capitol.jpeg';
     $alt = 'capitol hill station';
     $content = 'The <b>Capitol Hill Station</b> connects people to Cal Anderson Park, Kaiser Permanente campus, and some of the best bars in town!';
     break;
 
 case 'Sunday':
-    $mushroom = '<h2>Today we celbrate the University of Washington Station!</h2>';
+    $station = 'University of Washington Station';
     $pic = 'uw.jpeg';
     $alt = 'university of washington station';
     $content = 'The <b>University of Washington Station</b> is great for UW students, professors, and Huskies fans.';
@@ -122,10 +100,10 @@ case 'Sunday':
 
     <main>
     <h1>Every day is a good day to celebrate a link light rail station!</h1><br>
-    
-<?php
-echo $mushroom;
-?>
+    <h2>Today we celebrate the <?php
+echo $station;
+?>!</h2>  
+
 <br>
 <img alt="Simpsons gif of kids singing hail to the bus driver to Otto" src="images/hail.gif">
 <br>
@@ -145,7 +123,9 @@ echo $mushroom;
 
 </main>
     <aside>
-<h2>This station looks like this:</h2><br>
+<h2>The <?php
+echo $station;
+?> looks like this:</h2><br>
 <img src="images/<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
     </aside>
 

@@ -1,6 +1,8 @@
 <?php 
 include('config.php');
 
+
+
 // if isset $_GET['today'] <etc class="">
 
 if(isset($_GET['id'])) {
@@ -36,6 +38,22 @@ else {
 
 // for the big assignment, you will now call out your header include
 
+
+
+session_start();
+
+if(!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = 'You must login first!';
+    header('Location:login.php');
+}
+
+if(isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header('Location:login.php');
+}
+
+
 include('includes/header.php');
 
 ?></header>
@@ -51,7 +69,7 @@ if($feedback == ''){
     echo '<li><b>Season:</b> '.$areas.'</li>';
     echo '</ul>';
     echo '<p>Notable stops: '.$stops.'</p>';
-    echo '<p>Return back to the <a href="list.php">project page!</a></p>';
+    echo '<p>Return back to the <a href="list.php">main page!</a></p>';
 }
 
 mysqli_free_result($result);
@@ -62,7 +80,7 @@ mysqli_close($iConn);
 <aside>
 <?php
 if($feedback == ''){
-    echo '<img class="center" src="images/map-'.$id.'.jpeg" alt="'.$name.'">';
+    echo '<img class="center" src="images/map-'.$id.'.jpeg" alt="photo of '.$name.'">';
 }
 ?>
 </aside>

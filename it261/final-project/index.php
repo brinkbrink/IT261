@@ -1,5 +1,7 @@
 <?php
 
+
+
 session_start();
 
 include('config.php');
@@ -16,34 +18,19 @@ if(isset($_GET['logout'])) {
 }
 
 include('includes/header.php');
-// notification message
-
-if(isset($_SESSION['success'])) :?>
-
-<div class="success">
-<h3> 
-<?php echo $_SESSION['success'];
-unset($_SESSION['success']);
+//stuff you cut out was here
 ?>
-</h3>
-</div>  <!-- end div success -->
-<?php endif ; 
-
-if(isset($_SESSION['username'])) :?>
-
-<div class="welcome-logout">
-<h3> Hello 
-    <?php echo $_SESSION['username']; ?>
-</h3>
-<p><a href="index.php?logout='1'">Log out</a></p>
-</div> <!-- end welcome-logout div -->
-<?php endif ; ?>
-</header>
 <div id="wrapper">
-<h1>Welcome to the home page!</h1>
+    <main>
+<?php echo $headline; ?>
+<p>This is my final project website for IT 261! My website's subject is Seattle's public transporation. For more information about this website please visit the <a href="about.php">about page</a>.</p>
+<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+</main>
+<aside>
+<img alt="monorail in front of space needle in Seattle" src="images/monorail.jpeg">
+</aside>
 
-<img alt="peanut characters dancing" src="https://66.media.tumblr.com/6cdeaaede6614da2f70c1670059f5b2f/912f391e198454a6-27/s500x750/b08a86556993b160eb965a7dffdefd698bbe9ad7.gif">
 
-</div> <!-- end wrapper -->
 <?php
 include('includes/footer.php');
