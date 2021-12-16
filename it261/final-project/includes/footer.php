@@ -18,6 +18,6 @@
             <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Check CSS</a></li>
         </ul>
     </footer>
-            </div>
+    </div> <!-- end wrapper -->
 </body>
 </html>

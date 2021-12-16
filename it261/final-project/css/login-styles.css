@@ -8,21 +8,21 @@
 }
 
 body {
-    color: #4a6670;
-    background: #c6d8af;
+    color: #fff;
+    background: #5a5b5f;
 }
 
 header {
-    background: #653239;
+    background: #0b05ba;
     height: 90px;
 }
 
 a:link {
-    color: #c6d8af;
+    color: #ffd900;
   }
   
   a:visited {
-    color: #82735c;
+    color: #060272;
   }
   
   a:hover {
@@ -75,7 +75,7 @@ fieldset {
 
 form {
     color: #fff;
-    background: #4b3b40;
+    background: #0b05ba;
     width: 500px;
     margin: 0 auto;
 }

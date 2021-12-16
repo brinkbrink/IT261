@@ -40,9 +40,9 @@ if(empty($_POST['email'])) {
 }
 
 if(empty($_POST['current'])) {
-    $level_Err = 'Please fill out your current location!';
+    $current_Err = 'Please choose your current location!';
 } else {
-    $level = $_POST['current'];
+    $current = $_POST['current'];
 }
 
 if(empty($_POST['destinations'])) {
@@ -52,9 +52,9 @@ if(empty($_POST['destinations'])) {
 }
 
 if(empty($_POST['type'])) {
-    $area_Err = 'Please choose your preferred mode!';
+    $type_Err = 'Please choose your preferred mode!';
 } else {
-    $area = $_POST['type'];
+    $type = $_POST['type'];
 }
 
 if(empty($_POST['comments'])) {
@@ -108,7 +108,7 @@ $_POST['comments'],
 $_POST['privacy'],
 $_POST['phone']
 )) {
-
+//
 $to = 'szemeo@mystudentswa.com' ;
 $subject = 'Test Email,' .date('m/d/y') ;
 $body = '
@@ -116,9 +116,9 @@ The first name is: '.$first_name.' '.PHP_EOL.'
 The last name is: '.$last_name.' '.PHP_EOL.'
 Email: '.$email.' '.PHP_EOL.'
 Phone: '.$phone.' '.PHP_EOL.'
-Difficulty Level: '.$level.' '.PHP_EOL.'
-destinations: '.my_destinations().' '.PHP_EOL.'
-Region: '.$area.' '.PHP_EOL.'
+Mode: '.$type.' '.PHP_EOL.'
+Destinations: '.my_destinations().' '.PHP_EOL.'
+Current: '.$current.' '.PHP_EOL.'
 Comments: '.$comments.' '.PHP_EOL.'
 ';
 
@@ -157,31 +157,12 @@ if(isset($_GET['logout'])) {
 include('includes/header.php');
 // notification message
 
-if(isset($_SESSION['success'])) :?>
-
-<div class="success">
-<h3> 
-<?php echo $_SESSION['success'];
-unset($_SESSION['success']);
 ?>
-</h3>
-</div>  <!-- end div success -->
-<?php endif ; 
-
-if(isset($_SESSION['username'])) :?>
-
-<div class="welcome-logout">
-<h3> Hello 
-    <?php echo $_SESSION['username']; ?>
-</h3>
-<p><a href="index.php?logout='1'">Log out</a></p>
-</div> <!-- end welcome-logout div -->
-<?php endif ; ?>
 </header>
 
     <div id="wrapper">
     <main>
-    <h1><?php echo $headline; ?></h1>
+    <?php echo $headline; ?>
 
     <h2>Please fill out our transit request form!</h2>
 
