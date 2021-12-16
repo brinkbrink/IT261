@@ -56,7 +56,7 @@ if(isset($_GET['logout'])) {
 
 include('includes/header.php');
 
-?></header>
+?>
 <div id="wrapper">
 <main>
 <h2>Welcome to <?php echo $name;?>'s page!</h2>
@@ -66,7 +66,7 @@ if($feedback == ''){
     echo '<ul>';
     echo '<li><b>Route Name:</b> '.$name.'</li>';
     echo '<li><b>Transit Type:</b> '.$type.'</li>';
-    echo '<li><b>Season:</b> '.$areas.'</li>';
+    echo '<li><b>Serviced Areas:</b> '.$areas.'</li>';
     echo '</ul>';
     echo '<p>Notable stops: '.$stops.'</p>';
     echo '<p>Return back to the <a href="list.php">main page!</a></p>';
@@ -84,7 +84,6 @@ if($feedback == ''){
 }
 ?>
 </aside>
-</div> <!--end wrapper-->
 
 <?php
 mysqli_free_result($result);
