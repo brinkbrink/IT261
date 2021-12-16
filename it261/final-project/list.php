@@ -17,7 +17,6 @@ if(isset($_GET['logout'])) {
 
 include('includes/header.php');
 ?>
-</header>
 
     <div id="wrapper">
     <div id="list-main">

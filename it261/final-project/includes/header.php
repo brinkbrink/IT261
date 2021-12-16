@@ -50,7 +50,7 @@ switch(THIS_PAGE){
 
     default:
         $title = THIS_PAGE;
-        $logo = '';//no icon by default
+        $logo = '';
 }
 
 $nav['index.php'] = 'Home';
@@ -67,7 +67,7 @@ $nav["index.php?logout='1"] = 'Logout';
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> <?php echo $title; ?></title>
+<title><?php echo $title; ?></title>
 <link href="css/styles.css" type="text/css" rel="stylesheet">
 
 </head>

@@ -17,7 +17,6 @@ if(isset($_GET['logout'])) {
 
 include('includes/header.php');
 ?>
-</header>
 <?php
 // class coffee exercise
 // if today is Thursday it's a pumpkin latte day
@@ -76,7 +75,7 @@ case 'Thursday':
     break;
 
 case 'Friday':
-    $station = 'Pioneer Square Station!';
+    $station = 'Pioneer Square Station';
     $pic = 'pioneer.jpeg';
     $alt = 'pioneer square station';
     $content = 'The <b>Pioneer Square Station</b> is especially helpful on First Thursdays if you like to look at art!';

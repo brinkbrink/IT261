@@ -80,7 +80,7 @@ mysqli_close($iConn);
 <aside>
 <?php
 if($feedback == ''){
-    echo '<img class="center" src="images/map-'.$id.'.jpeg" alt="'.$name.'">';
+    echo '<img class="center" src="images/map-'.$id.'.jpeg" alt="photo of '.$name.'">';
 }
 ?>
 </aside>
